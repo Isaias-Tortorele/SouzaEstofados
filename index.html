@@ -1,156 +1,260 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <title>Souza Estofados</title>
-    <style>
-      * {
-      padding:0;
-      margin:0;
-      vertical-align:baseline;
-      list-style:none;
-      border:0;
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Souza Estofados</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      vertical-align: baseline;
+      list-style: none;
+      border: 0;
+    }
+
+    body {
+      margin: 0;
+      color: #FFF;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 500;
+      height: 800px;
+    }
+
+    a {
+      color: #FFF;
+      text-decoration: none
+    }
+
+    /* link que foi visitado */
+    a:visited {
+      color: #FFF;
+    }
+
+    /* mouse over */
+    a:hover {
+      color: rgb(228, 222, 222);
+    }
+
+    /* link selecionado */
+    a:active {
+      color: #7eb7cf;
+    }
+
+    li {
+      margin-right: 20px;
+      padding: 0;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    .header {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .topbar {
+      width: 100%;
+      height: 35px;
+      padding: 4px 0;
+      background-color: #0094FF;
+    }
+
+    .area-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .list-contat,
+    .list-icon {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+    }
+
+    .image {
+      top: 0px;
+      width: auto;
+      height: 490px;
+      z-index: -999;
+      object-fit: cover;
+      position: absolute;
+      filter: brightness(20%);
+      image-rendering: pixelated;
+    }
+
+    .div-btn {
+      margin-top: 180px;
+    }
+
+    .div-btn-flex {
+      align-items: center;
+    }
+
+    .btn-whats {
+      width: 200px;
+      color: #FFF;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
+      background-image: linear-gradient(to right, #7eb7cf, #7cc6df, #70c2e6, #B7D9E4);
+    }
+
+    .btn-whats:hover {
+      color: rgb(228, 222, 222);
+    }
+
+    .btn-whats:focus, .btn-agendar:focus {
+      outline: none;
+    }
+
+    .btn-agendar {
+      width: 250px;
+      color: #FFF;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      border: solid 2px;
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 5px;
+      border-color: #FFF;
+      border-color: #B7D9E4;
+      background-color: Transparent;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
+    }
+    
+    .btn-agendar:hover{
+      width: 250px;
+      color: #FFF;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      border: solid 2px;
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 5px;
+      border-color: #ffd700;
+      background-image: linear-gradient(to right, #ffd700, #ffe140, #ffd700, #fff129);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
+    }
+
+    .bi {
+      font-size: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .list-contat {
+        display: none;
       }
-      body{
-        margin: 0;
-        color: #FFF;
-        font-size: 14px;
-        line-height: 22px;
-        font-weight: 500; 
-      }
-      a{
-        color: #FFF;
-        text-decoration:none
-      }
-      li{
-        margin-right: 20px;
-        padding: 0;
-      }
-      ul{
-        padding: 0;
-      }
-      .header{
-        justify-content: center;
-        align-items: center;
-      }
-      .topbar{
-        width: 100%;
-        height: 35px;
-        padding: 4px 0;
-        background-color: #0094FF;
-      }
-      .area-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-      }
-      .list-contat, .list-icon{
-        display: flex;
-        list-style: none;
-        align-items: center;
-        text-align: center;
+
+      .icons {
         margin: auto;
       }
-      .image{
+
+      .image {
         width: auto;
-        height: 550px;
-        object-fit: cover;
-        filter: brightness(20%);
-        z-index: -999;
-        position: absolute;
-        top: 0px;
-
+        height: 350px;
       }
-      .bi{
-        font-size: 20px;
+
+      .navbar-brand {
+        font-size: 15px;
       }
-      @media (max-width: 800px)
-        {
-          .list-contat
-          {
-            display: none;
-          }
-          .icons{
-            margin: auto;
-          }
-        }
+    }
 
-    </style>
-  </head>
-  <body>
+    @media (max-width: 900px) {
+      .div-btn {
+        margin-top: 50px;
+      }
+    }
+  </style>
+</head>
 
-      <header class="header">
-        <div class="topbar">
-          <div class="container">
-            <div class="area-container">
+<body>
 
-              <div class="icons">
-                <ul class="list-icon">
-                  <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
-                  <li><a href=""><i class="bi bi-facebook"></i></a></li>
-                  <li><a href=""><i class="bi bi-linkedin"></i></a></li>
-                  <li><a href=""><i class="bi bi-youtube"> </i></a></li>
-                </ul>
-              </div>
+  <header class="header">
+    <div class="topbar">
+      <div class="container">
+        <div class="area-container">
 
-              <div>
-                <ul class="list-contat">
-                  <a href=""><li>Sobre nós</li></a>
-                  <a href=""><li>Fale Conosco</li></a>
-                  <a href=""><li><i class="bi bi-whatsapp" style="margin: 0 15px"></i>(11) 99999-9999</li></a>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        
-        <nav class="navbar navbar-expand-lg text-uppercase">
-          <div class="container">
-              <a class="navbar-brand" href="#">Souza Estofados</a>
-              <button 
-              class="navbar-toggler text-uppercase bg-primary text-white" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#navbarResponsive" 
-              aria-controls="navbarResponsive" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation">
-                  <i class="bi bi-list"></i>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav ms-auto">
-                    <li class="mx-0 d-flex justify-content-center"><a class="py-3 px-0 px-lg-3" href="#">Inicio</a></li>
-                    <li class="mx-0 d-flex justify-content-center"><a class="py-3 px-0 px-lg-3" href="#">Serviços</a></li>
-                    <li class="mx-0 d-flex justify-content-center"><a class="py-3 px-0 px-lg-3" href="#">Estofados</a></li>
-                    <li class="mx-0 d-flex justify-content-center"><a class="py-3 px-0 px-lg-3" href="#">Contato</a></li>
-                  </ul>
-              </div>
+          <div class="icons">
+            <ul class="list-icon">
+              <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+              <li><a href=""><i class="bi bi-facebook"></i></a></li>
+              <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+              <li><a href=""><i class="bi bi-youtube"> </i></a></li>
+            </ul>
           </div>
 
-        </nav>
+          <div>
+            <ul class="list-contat">
+              <a href="">
+                <li>Sobre nós</li>
+              </a>
+              <a href="">
+                <li>Fale Conosco</li>
+              </a>
+              <a href="">
+                <li><i class="bi bi-whatsapp" style="margin: 0 15px"></i>(11) 99999-9999</li>
+              </a>
+            </ul>
+          </div>
 
-        <div>
-          <img 
-            class="image w-100" 
-            src="https://aaronstouchup.com/wp-content/uploads/2014/01/atu-upholstery-before-after.png" 
-            alt="First slide"
-          >
         </div>
-        
-      </header>
-      
-      
-      
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg text-uppercase">
+      <div class="container">
+        <a class="navbar-brand" href="#">Souza Estofados</a>
+        <button class="navbar-toggler text-uppercase bg-primary text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#">Inicio</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#">Serviços</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#">Estofados</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-center div-btn">
+      <div class="d-flex flex-column div-btn-flex">
+        <a href="#"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
+        <a href="##"><button class="btn-agendar">Agende um atendimento</button></a>
+      </div>
+
+      <img class="image w-100"
+        src="https://aaronstouchup.com/wp-content/uploads/2014/01/atu-upholstery-before-after.png"
+        alt="Imagem da empresa">
+    </div>
+
+  </header>
 
 
 
@@ -162,7 +266,13 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-  </body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
