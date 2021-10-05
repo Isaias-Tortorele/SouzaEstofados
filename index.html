@@ -147,7 +147,6 @@
       text-align: center;
       border-radius: 5px;
       border-color: #FFF;
-      border-color: #B7D9E4;
       background-color: Transparent;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
     }
@@ -162,9 +161,9 @@
       padding: 10px 15px;
       text-align: center;
       border-radius: 5px;
-      border-color: #FFF;
-      background-image: linear-gradient(to right, #7eb7cf, #7cc6df, #70c2e6, #B7D9E4);
+      border-color: transparent;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
+      background-image: linear-gradient(to right, #7eb7cf, #7cc6df, #70c2e6, #B7D9E4);
     }
 
     .bi {
@@ -190,12 +189,18 @@
     .img-svg {
       top: 10px;
     }
-    
-    .centralize{
+
+    .centralize {
       margin: auto;
     }
-    .img-slide{
+
+    .img-slide {
       height: 350px;
+      image-rendering: pixelated;
+    }
+
+    .background {
+      background-color: #0094FF;
     }
 
     @media (max-width: 800px) {
@@ -228,11 +233,11 @@
         image-rendering: pixelated;
       }
 
-      .w-70{
-        width: 100%!important;
+      .slide-tamanho {
+        width: 100% !important;
       }
 
-      .img-slide{
+      .img-slide {
         height: 300px;
       }
     }
@@ -247,6 +252,7 @@
 
 <body>
 
+  <!-- Barra fixa com informações-->
   <div class="topbar fixed-top">
     <div class="container">
       <div class="area-container">
@@ -277,21 +283,15 @@
       </div>
     </div>
   </div>
-
+  <!-- Header com menu e imagem -->
   <header class="header">
-
+    <!-- Menu responsivo -->
     <nav class="navbar navbar-expand-lg text-uppercase">
       <div class="container">
         <a class="navbar-brand" href="#">Souza Estofados</a>
-        <button 
-          class="navbar-toggler text-uppercase bg-primary text-white" 
-          type="button" 
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive" 
-          aria-controls="navbarResponsive" 
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler text-uppercase bg-primary text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
@@ -305,19 +305,19 @@
         </div>
       </div>
     </nav>
-
+    <!-- Botões CTA -->
     <div class="d-flex justify-content-center div-btn">
       <div class="d-flex flex-column div-btn-flex">
-        <a href="#"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
+        <a href="#"><button class="btn-whats mb-2">Peça seu orçamento</button></a>
         <a href="##"><button class="btn-agendar">Agende um atendimento</button></a>
       </div>
     </div>
-
+    <!-- Imagem fundo -->
     <img class="image" src="https://aaronstouchup.com/wp-content/uploads/2014/01/atu-upholstery-before-after.png"
-      alt="Imagem da empresa"
-      >
+      alt="Imagem da empresa">
   </header>
 
+  <!-- Section Serviços -->
   <section class="page-section" id="servicos">
     <div class="container py-3">
       <div class="h2 text-center text-black">SERVIÇOS</div>
@@ -374,10 +374,12 @@
     </div>
   </section>
 
+  <!-- Barra de separação -->
   <div class="container">
     <div style="height:5px; border:0; background-color: #0094FF; border-radius: 100%;"></div>
   </div>
 
+  <!-- Section Sobre nós -->
   <section class="page-section" id="sobre">
     <div class="container py-3">
       <div class="h2 text-center text-black">SOBRE NÓS</div>
@@ -409,17 +411,26 @@
     </div>
   </section>
 
+  <!-- Barra de separação -->
   <div class="container">
     <div style="height:5px; border:0; background-color: #0094FF; border-radius: 100%;"></div>
   </div>
 
+  <!-- Slides -->
   <div class="container page-section d-flex justify-content-center">
-    <div id="carouselExampleCaptions" class="carousel slide w-70" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide w-50 slide-tamanho" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+
       </div>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
@@ -443,27 +454,82 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-      </button>
+      </button> -->
     </div>
   </div>
-  
-  <div class="mb-5"></div>
-    
-    
+
+  <!-- Botão orçamento -->
+  <div class="d-flex justify-content-center py-5">
+    <div class="d-flex flex-column div-btn-flex">
+      <a href="#"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
+    </div>
+  </div>
 
 
+  <!-- Footer -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#0094FF" fill-opacity="1"
+      d="M0,192L48,208C96,224,192,256,288,266.7C384,277,480,267,576,245.3C672,224,768,192,864,186.7C960,181,1056,203,1152,176C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+  <footer class="background text-center text-white">
+    <div class="container">
+      <!-- Título -->
+      <section class="d-flex justify-content-center">
+        <div>
+          <h4 class="m-2">Souza Estofados</h5>
+        </div>
+      </section>
+      
+      <!-- Section Menu -->
+      <section>
+        <hr>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-2 col-sm-12"><a class="h6" href="#">Inicio</a></div>
+          <div class="col-md-2 col-sm-12"><a class="h6" href="#servicos">Serviços</a></div>
+          <div class="col-md-2 col-sm-12"><a class="h6" href="#">Estofados</a></div>
+          <div class="col-md-2 col-sm-12"><a class="h6" href="#">Contato</a></div>
+        </div>
+        <hr>
+      </section>
+    </div>
+
+    <!-- Section imagem -->
+    <section>
+      <img 
+        style="height: 90px;"
+        src="https://alban.com.br/wp-content/uploads/2021/07/bandeira-dos-cartoes-de-credito.png" 
+        alt="Cartões aceitos na empresa: Visa, MarterCar, HiperCard, Elo"
+      >
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia est fugit ipsum!</p>
+    </section>
+
+    <!-- Section Social media -->
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-whatsapp"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube"></i></a>
+    </section>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #007ed8;">
+      <!-- © 2021 Copyright: -->
+      <a class="text-white" href="#">Desenvolvido: Por dois colegas</a>
+    </div>
+  </footer>
 
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
     crossorigin="anonymous">
   </script>
 
