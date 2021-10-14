@@ -26,7 +26,7 @@
 
     body {
       margin: 0;
-      color: #FFF;
+      color: #000;
       font-size: 14px;
       line-height: 22px;
       font-weight: 500;
@@ -57,13 +57,11 @@
       color: #7eb7cf;
     }
 
-    li {
-      margin-right: 20px;
-      padding: 0;
-    }
-
     ul {
       padding: 0;
+    }
+    .lista{
+      margin-left: 15px;
     }
 
     .header {
@@ -205,6 +203,10 @@
     .background {
       background-color: #0094FF;
     }
+    .image-beneficios{
+      width: 50%; 
+      height: auto;
+    }
 
     @media (max-width: 800px) {
       .list-contat {
@@ -243,6 +245,10 @@
       .img-slide {
         height: 300px;
       }
+      .image-beneficios{
+        width: 100%; 
+        height: auto;
+      }
     }
 
     @media (max-width: 900px) {
@@ -259,23 +265,22 @@
   <div class="topbar fixed-top">
     <div class="container">
       <div class="area-container">
-
         <div class="icons">
           <ul class="list-icon">
-            <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
-            <li><a href=""><i class="bi bi-facebook"></i></a></li>
-            <li><a href=""><i class="bi bi-linkedin"></i></a></li>
-            <li><a href=""><i class="bi bi-youtube"> </i></a></li>
+            <li class="lista"><a href=""><i class="bi bi-whatsapp"></i></a></li>
+            <li class="lista"><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li class="lista"><a href=""><i class="bi bi-linkedin"></i></a></li>
+            <li class="lista"><a href=""><i class="bi bi-youtube"> </i></a></li>
           </ul>
         </div>
 
         <div>
           <ul class="list-contat">
             <a href="#sobre">
-              <li>Sobre nós</li>
+              <li class="lista">Sobre nós</li>
             </a>
             <a href="">
-              <li>Fale Conosco</li>
+              <li class="lista">Fale Conosco</li>
             </a>
             <a href="">
               <li><i class="bi bi-whatsapp" style="margin: 0 15px"></i>(11) 99999-9999</li>
@@ -302,7 +307,8 @@
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#inicio">INICIO</a></li>
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#estofados">ESTOFADOS</a>
             </li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#tapetes">TAPETES E CARPETES</a>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#tapetes">TAPETES E
+                CARPETES</a>
             </li>
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#">DEPOIMENTOS</a></li>
           </ul>
@@ -386,21 +392,10 @@
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-sofa" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-sofa">
             <div class="carousel-indicators">
-              <button 
-                type="button" 
-                data-bs-target="#carousel-sofa" 
-                data-bs-slide-to="0" 
-                class="active" 
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
+              <button type="button" data-bs-target="#carousel-sofa" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
 
-              <button 
-                type="button" 
-                data-bs-target="#carousel-sofa" 
-                data-bs-slide-to="1" 
-                aria-label="Slide 2"
-              ></button>
+              <button type="button" data-bs-target="#carousel-sofa" data-bs-slide-to="1" aria-label="Slide 2"></button>
 
             </div>
 
@@ -426,16 +421,17 @@
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-sofa" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
-          </div> 
+          </div>
         </div>
 
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-poltronas" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-poltronas">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carousel-poltronas" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-poltronas" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
 
-              <button type="button" data-bs-target="#carousel-poltronas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-poltronas" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
 
             </div>
 
@@ -455,15 +451,17 @@
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-poltronas" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-poltronas"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-poltronas" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-poltronas"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div> 
+          </div>
         </div>
       </div>
 
@@ -473,25 +471,15 @@
     <section class="page-section" id="tapetes">
       <div class="container py-3">
         <h4 class="text-center ">TAPETES e CARPATES</h4>
-      
+
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-tapetes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-tapetes">
             <div class="carousel-indicators">
-              <button 
-                type="button" 
-                data-bs-target="#carousel-tapetes" 
-                data-bs-slide-to="0" 
-                class="active" 
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
+              <button type="button" data-bs-target="#carousel-tapetes" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
 
-              <button 
-                type="button" 
-                data-bs-target="#carousel-tapetes" 
-                data-bs-slide-to="1" 
-                aria-label="Slide 2"
-              ></button>
+              <button type="button" data-bs-target="#carousel-tapetes" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
 
             </div>
 
@@ -517,15 +505,15 @@
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-tapetes" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
-          </div> 
+          </div>
         </div>
-      
+
     </section>
 
     <!-- Barra de separação -->
-    <div class="container">
+    <!-- <div class="container">
       <div style="height:5px; border:0; background-color: #0094FF; border-radius: 100%;"></div>
-    </div>
+    </div> -->
 
     <!-- Section Sobre nós -->
     <section class="page-section" id="sobre">
@@ -536,23 +524,26 @@
             <div class="col-md-6 col-ms-12 m-auto">
               <div class="card-block">
                 <p class="text-black">
-                  Somos uma empresa dedicada em trazer bem estar de ambientes e a nossa missão é contribuir com a Higienização e Limpeza dos Estofados, Tapetes e Carpetes!
+                  Somos uma empresa dedicada em trazer bem estar de ambientes e a nossa missão é contribuir com a
+                  Higienização e Limpeza dos Estofados, Tapetes e Carpetes!
                 </p>
                 <p class="text-black">
-                  Estamos consolidados no Mercado há 3 anos, utilizando produtos de qualidade e específicos para cada tipo de material. Atuamos com empresas parceiras e também com clientes a domicílio.
+                  Estamos consolidados no Mercado há 3 anos, utilizando produtos de qualidade e específicos para cada
+                  tipo de material. Atuamos com empresas parceiras e também com clientes a domicílio.
                 </p>
                 <p class="text-black">
-                  Com os melhores preços de mercado e com qualidade excelente, levamos o serviço da Souza Higienização, até você.
+                  Com os melhores preços de mercado e com qualidade excelente, levamos o serviço da Souza Higienização,
+                  até você.
                 </p>
               </div>
             </div>
 
             <div class="col-md-5 col-ms-12">
               <div class="card-block">
-                <img align=left  class="img-thumbnail rounded" src="./assets/logo.png" alt="">
+                <img align=left class="img-thumbnail rounded" src="./assets/logo.png" alt="">
                 <img align=right class="img-thumbnail rounded" src="./assets/qualidade.png" alt="">
               </div>
-            </div>   
+            </div>
           </div>
         </div>
       </div>
@@ -605,9 +596,46 @@
         <a href="#"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
       </div>
     </div>
+
+    <!-- Section beneficios -->
+    <section class="" id="sobre">
+      <div class="">
+        <div class="card p-4">
+          <h4 class="text-center ">Beneficios de realizar limpeza e higienização:</h4>
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-6 text-center">
+              <h2>Sujo</h2>
+              <ul>
+                <li>Pelo</li>
+                <li>Acaros</li>
+                <li>Bactérias</li>
+                <li>Fungos</li>
+                <li>Poeira</li>
+                <li>Manchas</li>
+                <li>Mal cheiro</li>
+                <li>Residuo de comida</li>
+              </ul>
+            </div>
+            
+            <div class="col-md-6 col-sm-6 text-center">
+              <h2>Limpo</h2>
+              <ul>
+                <li>Odor agradável</li>
+                <li>Ambiente limpo e saudável</li>
+                <li>Maciez</li>
+                <li>Higienização</li>
+                <li>Reduz risco de doenças alérgicas</li>
+              </ul>
+            </div>
+              <img src="./assets/sofa-limpo-limpo.jpg" class="image-beneficios" alt="">
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-
-
 
   <!-- Footer -->
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
