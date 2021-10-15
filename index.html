@@ -72,12 +72,16 @@
       box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75);
     }
 
+    .bg-nav{
+      background-color: rgb(42, 96, 117);
+    }
+
     .topbar {
       width: 100%;
       height: 35px;
       padding: 4px 0;
       background-color: #0094FF;
-      box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75);
+      /* box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75); */
       ;
     }
 
@@ -98,7 +102,7 @@
     }
 
     .image {
-      top: 0px;
+      top: 20px;
       width: 100%;
       height: 490px;
       z-index: -999;
@@ -267,7 +271,7 @@
       <div class="area-container">
         <div class="icons">
           <ul class="list-icon">
-            <li class="lista"><a href=""><i class="bi bi-whatsapp"></i></a></li>
+            <li ><a href=""><i class="bi bi-whatsapp"></i></a></li>
             <li class="lista"><a href=""><i class="bi bi-facebook"></i></a></li>
             <li class="lista"><a href=""><i class="bi bi-linkedin"></i></a></li>
             <li class="lista"><a href=""><i class="bi bi-youtube"> </i></a></li>
@@ -294,23 +298,30 @@
   <!-- Header com menu e imagem -->
   <header class="header">
     <!-- Menu responsivo -->
-    <nav class="navbar navbar-expand-lg text-uppercase">
+    <nav class="navbar navbar-expand-lg bg-nav">
       <div class="container">
-        <a class="navbar-brand" href="#">Souza Estofados</a>
-        <button class="navbar-toggler text-uppercase bg-primary text-white" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <a class="navbar-brand text-center" href="index.html">
+          <!-- <img src="./assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+          Souza Estofados
+        </a>
+        
+        <button class="navbar-toggler text-white" 
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" 
+          aria-controls="navbarResponsive" 
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#inicio">INICIO</a></li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#estofados">ESTOFADOS</a>
-            </li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#tapetes">TAPETES E
-                CARPETES</a>
-            </li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-0 px-lg-3" href="#">DEPOIMENTOS</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#inicio">INICIO</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#estofados">ESTOFADOS</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#tapetes">TAPETES E
+                CARPETES</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 pl-lg-3" href="#depoimentos">DEPOIMENTOS</a></li>
           </ul>
         </div>
       </div>
@@ -323,11 +334,11 @@
       </div>
     </div>
     <!-- Imagem fundo -->
-    <img class="image" src="https://aaronstouchup.com/wp-content/uploads/2014/01/atu-upholstery-before-after.png"
-      alt="Imagem da empresa">
+    <img class="image" src="./assets/Banner-1.jpg" alt="Imagem da empresa"/>
   </header>
 
-  <main style="background-color: #a4c9e460">
+  <!-- <main style="background-color: #a4c9e460"> -->
+    <main>
 
     <!-- Section inicio -->
     <section class="page-section" id="inicio">
