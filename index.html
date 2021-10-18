@@ -26,7 +26,7 @@
 
     body {
       margin: 0;
-      color: #000;
+      color: rgb(42, 96, 117);
       font-size: 14px;
       line-height: 22px;
       font-weight: 500;
@@ -60,7 +60,8 @@
     ul {
       padding: 0;
     }
-    .lista{
+
+    .lista {
       margin-left: 15px;
     }
 
@@ -72,7 +73,7 @@
       box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75);
     }
 
-    .bg-nav{
+    .bg-nav {
       background-color: rgb(42, 96, 117);
     }
 
@@ -200,15 +201,15 @@
     }
 
     .img-slide {
-      height: 350px;
-      object-fit: cover;
+      height: 450px;
     }
 
     .background {
       background-color: #0094FF;
     }
-    .image-beneficios{
-      width: 50%; 
+
+    .image-beneficios {
+      width: 50%;
       height: auto;
     }
 
@@ -230,6 +231,10 @@
         font-size: 15px;
       }
 
+      .div-btn {
+        margin-top: 50px;
+      }
+
       .header {
         justify-content: center;
         align-items: center;
@@ -249,17 +254,14 @@
       .img-slide {
         height: 300px;
       }
-      .image-beneficios{
-        width: 100%; 
+
+      .image-beneficios {
+        width: 100%;
         height: auto;
       }
     }
 
-    @media (max-width: 900px) {
-      .div-btn {
-        margin-top: 50px;
-      }
-    }
+    @media (max-width: 900px) {}
   </style>
 </head>
 
@@ -271,10 +273,13 @@
       <div class="area-container">
         <div class="icons">
           <ul class="list-icon">
-            <li ><a href=""><i class="bi bi-whatsapp"></i></a></li>
-            <li class="lista"><a href=""><i class="bi bi-facebook"></i></a></li>
-            <li class="lista"><a href=""><i class="bi bi-linkedin"></i></a></li>
-            <li class="lista"><a href=""><i class="bi bi-youtube"> </i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1"><i
+                  class="bi bi-whatsapp"></i></a></li>
+            <li class="lista"><a href="https://www.instagram.com/souzavitrines/"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li class="lista"><a href="https://www.facebook.com/souzavitrines.sousa.1"><i
+                  class="bi bi-facebook"></i></a></li>
+            <li class="lista"><a href="souzavitrineshigienizacao@gmail.com"><i class="bi bi-envelope"> </i></a></li>
           </ul>
         </div>
 
@@ -286,8 +291,8 @@
             <a href="">
               <li class="lista">Fale Conosco</li>
             </a>
-            <a href="">
-              <li><i class="bi bi-whatsapp" style="margin: 0 15px"></i>(11) 99999-9999</li>
+            <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
+              <li><i class="bi bi-whatsapp" style="margin: 0 15px"></i>(11) 94422-5000</li>
             </a>
           </ul>
         </div>
@@ -304,15 +309,10 @@
           <!-- <img src="./assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
           Souza Estofados
         </a>
-        
-        <button class="navbar-toggler text-white" 
-          type="button" 
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive" 
-          aria-controls="navbarResponsive" 
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
@@ -321,7 +321,8 @@
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#estofados">ESTOFADOS</a></li>
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#tapetes">TAPETES E
                 CARPETES</a></li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 pl-lg-3" href="#depoimentos">DEPOIMENTOS</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 pl-lg-3" href="#depoimentos">DEPOIMENTOS</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -329,16 +330,17 @@
     <!-- Botões CTA -->
     <div class="d-flex justify-content-center div-btn">
       <div class="d-flex flex-column div-btn-flex">
-        <a href="#"><button class="btn-whats mb-2">Peça seu orçamento</button></a>
+        <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
+          <button class="btn-whats mb-2">Peça seu orçamento</button></a>
         <a href="##"><button class="btn-agendar">Entre em contato já</button></a>
       </div>
     </div>
     <!-- Imagem fundo -->
-    <img class="image" src="./assets/Banner-1.jpg" alt="Imagem da empresa"/>
+    <img class="image" src="./assets/Banner-1.jpg" alt="Imagem da empresa" />
   </header>
 
   <!-- <main style="background-color: #a4c9e460"> -->
-    <main>
+  <main>
 
     <!-- Section inicio -->
     <section class="page-section" id="inicio">
@@ -347,46 +349,131 @@
         <p class="text-center">Veja nosssas fotos</p>
 
         <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
+          <!-- <div class="carousel-indicators">
+            <button 
+              type="button" 
+              data-bs-target="#carouselInicio" 
+              data-bs-slide-to="0" 
+              class="active"
+              aria-current="true" 
+              aria-label="Slide 1">
+            </button>
 
             <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
 
             <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
-          </div>
+            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+            <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+          </div> -->
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/sofa1.jpeg" class="d-block w-100 img-slide" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/sofa2.jpeg" class="d-block w-100 img-slide" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/sofa4.jpeg" class="d-block w-100 img-slide" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/sofa3.jpeg" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem1.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem10.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem11.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem12.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem2.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem3.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem4.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem5.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem6.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem7.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem8.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem9.png" class="d-block w-100 img-slide" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
               </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
           </button>
         </div>
 
@@ -397,7 +484,7 @@
     <!-- Section estofados -->
     <section class="page-section" id="estofados">
       <div class="container py-3">
-        <h4 class="text-center ">ESTOFADOS</h4>
+        <h3 class="text-center ">Estofados</h3>
         <p class="text-center">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões</p>
 
         <div class="mb-3 d-flex justify-content-center">
@@ -412,14 +499,14 @@
 
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/Imagem15.jpg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
-                  <h4>Sofá</h4>
+                  <h3>Sofá</h3>
                   <h5>Antes</h5>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/Imagem20.png.jpg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
                   <h5>Depois</h5>
                 </div>
@@ -450,7 +537,7 @@
               <div class="carousel-item active">
                 <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
-                  <h4>Poltronas</h4>
+                  <h3>Poltronas</h3>
                   <h5>Antes</h5>
                 </div>
               </div>
@@ -481,7 +568,7 @@
     <!-- Section tapetes e carpetes -->
     <section class="page-section" id="tapetes">
       <div class="container py-3">
-        <h4 class="text-center ">TAPETES e CARPATES</h4>
+        <h3 class="text-center ">Tapetes e carpetes</h3>
 
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-tapetes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-tapetes">
@@ -498,7 +585,7 @@
               <div class="carousel-item active">
                 <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
-                  <h4>Sofá</h4>
+                  <h3>Sofá</h3>
                   <h5>Antes</h5>
                 </div>
               </div>
@@ -529,7 +616,7 @@
     <!-- Section Sobre nós -->
     <section class="page-section" id="sobre">
       <div class="container">
-        <h4 class="text-center ">Souza Higienização de Estofados</h4>
+        <h3 class="text-center ">Souza Higienização de Estofados</h3>
         <div class="card p-4">
           <div class="row">
             <div class="col-md-6 col-ms-12 m-auto">
@@ -609,10 +696,10 @@
     </div>
 
     <!-- Section beneficios -->
-    <section class="" id="sobre">
+    <section>
       <div class="">
         <div class="card p-4">
-          <h4 class="text-center ">Beneficios de realizar limpeza e higienização:</h4>
+          <h3 class="text-center ">Beneficios de realizar limpeza e higienização:</h3>
           <div class="row justify-content-center">
             <div class="col-md-6 col-sm-6 text-center">
               <h2>Sujo</h2>
@@ -627,7 +714,7 @@
                 <li>Residuo de comida</li>
               </ul>
             </div>
-            
+
             <div class="col-md-6 col-sm-6 text-center">
               <h2>Limpo</h2>
               <ul>
@@ -638,7 +725,7 @@
                 <li>Reduz risco de doenças alérgicas</li>
               </ul>
             </div>
-              <img src="./assets/sofa-limpo-limpo.jpg" class="image-beneficios" alt="">
+            <img src="./assets/sofa-limpo-limpo.jpg" class="image-beneficios" alt="">
 
 
           </div>
@@ -659,7 +746,7 @@
       <!-- Título -->
       <section class="d-flex justify-content-center">
         <div>
-          <h4 class="m-2">Souza Estofados</h5>
+          <h3 class="m-2">Souza Estofados</h3>
         </div>
       </section>
 
@@ -686,14 +773,19 @@
 
     <!-- Section Social media -->
     <section class="mb-4">
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-whatsapp"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1"
+        href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1" role="button"><i
+          class="bi bi-whatsapp"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/souzavitrines/" role="button"><i
+          class="bi bi-instagram"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/souzavitrines.sousa.1"
+        role="button"><i class="bi bi-facebook"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="souzavitrineshigienizacao@gmail.com" role="button"><i
+          class="bi bi-envelope"></i></a>
     </section>
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: #007ed8;">
+    <div class="text-center p-3" style="background-color: rgb(42, 96, 117);">
       <!-- © 2021 Copyright: -->
       <a class="text-white" href="#">Desenvolvido: Por dois colegas</a>
     </div>
