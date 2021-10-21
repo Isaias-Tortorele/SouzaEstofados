@@ -202,7 +202,7 @@
     }
 
     .img-slide {
-      height: 460px;
+      height: auto;
       object-fit: contain;
     }
 
@@ -248,7 +248,7 @@
       }
 
       .img-slide {
-        height: 250px;
+        height: initial
       }
 
       .image-beneficios {
@@ -336,7 +336,7 @@
     <img class="image" src="./assets/Banner-1.jpg" alt="Imagem da empresa" />
   </header>
 
-  <!-- <main style="background-color: #a4c9e460"> -->
+  <!-- <main style="background-color: #a4c9e441"> -->
   <main>
 
     <!-- Section inicio -->
@@ -344,13 +344,10 @@
       <h1 class="text-center">Inicio</h1>
       <p class="text-center">Veja nosssas fotos</p>
       <div class="container slides">
-
         <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./assets/sofa1.jpeg" class="d-block w-100 img-slide" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
             </div>
             <div class="carousel-item">
               <img src="./assets/sofa2.jpeg" class="d-block w-100 img-slide" alt="...">
@@ -365,10 +362,10 @@
               <img src="./assets/Imagem1.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="./assets/Imagem11.jpeg" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/Imagem2.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="./assets/Imagem12.jpeg" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/Imagem3.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
               <img src="./assets/Imagem4.jpeg" class="d-block w-100 img-slide" alt="...">
@@ -388,37 +385,37 @@
             <div class="carousel-item">
               <img src="./assets/Imagem9.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem10.jpeg" class="d-block w-100 img-slide" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Imagem11.jpeg" class="d-block w-100 img-slide" alt="...">
+            </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
           </button>
         </div>
-
       </div>
-
     </section>
 
     <!-- Section estofados -->
     <section class="page-section" id="estofados">
-      <div class="container py-3">
+      <div class="container">
         <h3 class="text-center ">Estofados</h3>
         <p class="text-center">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões</p>
-
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-sofa" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-sofa">
-            
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/Imagem15.jpeg" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/sofa1.jpeg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
                   <h5>Sofá</h5>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Imagem20.jpeg" class="d-block w-100 img-slide" alt="...">    
               </div>
               <div class="carousel-item">
                 <img src="./assets/sofa1.jpeg" class="d-block w-100 img-slide" alt="...">
@@ -435,13 +432,16 @@
               <div class="carousel-item">
                 <img src="./assets/Imagem3.jpeg" class="d-block w-100 img-slide" alt="...">
               </div>
+              <div class="carousel-item">
+                <img src="./assets/Imagem14.jpeg" class="d-block w-100 img-slide" alt="...">    
+              </div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sofa" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-sofa" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
             </button>
           </div>
         </div>
@@ -456,8 +456,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/Imagem7.jpeg" class="d-block w-100 img-slide" alt="...">
-                
+                <img src="./assets/Imagem7.jpeg" class="d-block w-100 img-slide" alt="...">    
               </div>
               <div class="carousel-item">
                 <img src="./assets/Imagem6.jpeg" class="d-block w-100 img-slide" alt="...">
@@ -466,11 +465,11 @@
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-poltronas"
               data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-poltronas"
               data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
             </button>
           </div>
         </div>
@@ -479,37 +478,35 @@
           <div id="carousel-colcoes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-colcoes">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/colcoes1.jpg" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/colcoes1.jpeg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
                   <h5>Colçoes</h5>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/colcoes2.jpg" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/colcoes2.jpeg" class="d-block w-100 img-slide" alt="...">
               </div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-colcoes"
               data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-colcoes"
               data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
             </button>
           </div>
         </div>
       </div>
-
     </section>
 
     <!-- Section tapetes e carpetes -->
     <section class="page-section" id="tapetes">
-      <div class="container py-3">
+      <div class="container">
         <h3 class="text-center ">Tapetes e carpetes</h3>
-
         <div class="mb-3 d-flex justify-content-center">
-          <div id="carousel-tapetes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-tapetes">
+          <div id="carousel-tapetes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-tapetes"> 
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
@@ -530,7 +527,7 @@
             </button>
           </div>
         </div>
-
+      </div>
     </section>
 
     <!-- Barra de separação -->
@@ -644,7 +641,7 @@
                 <li>Reduz risco de doenças alérgicas</li>
               </ul>
             </div>
-            <img src="./assets/sofa-limpo-limpo.jpg" class="image-beneficios" alt="">
+            <img src="./assets/sofa-limpo-limpo.jpeg" class="image-beneficios" alt="">
 
 
           </div>
