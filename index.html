@@ -181,18 +181,18 @@
       font-size: 20px;
     }
 
-    .slides {
-      display: flex;
-      justify-content: center;
-    }
-
     .card {
       border: none;
       margin-bottom: 10px;
     }
 
     .page-section {
-      padding-top: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    .wrapper {
+      background-color: #0cd3ff;
     }
 
     .img-svg {
@@ -217,6 +217,56 @@
       height: auto;
     }
 
+    .wrapper h2{
+      color: #FFF;
+      text-align: center;
+      font-size: 36px;
+      padding-top: 50px;
+    }
+
+    .card-d {
+      text-align: center;
+    }
+
+    .mensagem-d {
+      background-color: #FFF;
+      color: #666;
+      border-radius: 10px;
+      padding: 20px 15%;
+      position: relative;
+      margin: 35px 50px;
+      font-style: italic;
+    }
+
+    .mensagem-d:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #FFF;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .card-d img {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #CCC;
+      border-radius: 50%;
+    }
+
+    .name-d {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #FFF;
+    }
+
+
     @media (max-width: 800px) {
       .list-contat {
         display: none;
@@ -236,7 +286,7 @@
       }
 
       .div-btn {
-        margin-top: 50px;
+        margin-top: 40px;
       }
 
       .header {
@@ -256,11 +306,6 @@
       .image-beneficios {
         width: 100%;
         height: auto;
-      }
-
-      .slides {
-        display: inherit;
-        justify-content: inherit;
       }
     }
 
@@ -282,7 +327,7 @@
             </li>
             <li class="lista"><a href="https://www.facebook.com/souzavitrines.sousa.1"><i
                   class="bi bi-facebook"></i></a></li>
-            <li class="lista"><a href="souzavitrineshigienizacao@gmail.com"><i class="bi bi-envelope"> </i></a></li>
+            <li class="lista"><a href="#"><i class="bi bi-envelope"> </i></a></li>
           </ul>
         </div>
 
@@ -317,6 +362,7 @@
         <div class="collapse navbar-collapse " id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#inicio">INICIO</a></li>
+            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#sobre">Sobre nós</a></li>
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#estofados">ESTOFADOS</a></li>
             <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#tapetes">TAPETES E
                 CARPETES</a></li>
@@ -340,12 +386,11 @@
 
   <!-- <main style="background-color: #a4c9e441"> -->
   <main>
-
     <!-- Section inicio -->
-    <section class="page-section" id="inicio">
-      <h1 class="text-center">Inicio</h1>
-      <p class="text-center">Veja nosssas fotos</p>
-      <div class="container slides">
+    <section class="page-section">
+      <div class="container">
+        <h3 class="text-center">Limpeza de estofados</h3>
+        <p class="text-center">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões</p>
         <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -405,11 +450,45 @@
       </div>
     </section>
 
+    <!-- Section Sobre nós -->
+    <section class="page-section wrapper" id="sobre">
+      <div class="container">
+        <h3 class="text-center ">Souza Higienização de Estofados</h3>
+        <div class="p-4">
+          <div class="row">
+            <div class="col-md-6 col-ms-12 m-auto">
+              <div class="card-block">
+                <p class="text-black">
+                  Somos uma empresa dedicada em trazer bem estar de ambientes e a nossa missão é contribuir com a
+                  Higienização e Limpeza dos Estofados, Tapetes e Carpetes!
+                </p>
+                <p class="text-black">
+                  Estamos consolidados no Mercado há 3 anos, utilizando produtos de qualidade e específicos para cada
+                  tipo de material. Atuamos com empresas parceiras e também com clientes a domicílio.
+                </p>
+                <p class="text-black">
+                  Com os melhores preços de mercado e com qualidade excelente, levamos o serviço da Souza Higienização,
+                  até você.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-5 col-ms-12">
+              <div class="card-block">
+                <img align=left class="img-thumbnail rounded" src="./assets/logo.png" alt="">
+                <img align=right class="img-thumbnail rounded" src="./assets/qualidade.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Section estofados -->
     <section class="page-section" id="estofados">
       <div class="container">
         <h3 class="text-center ">Estofados</h3>
-        <p class="text-center">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões</p>
+        <p class="text-center">Ácaros e bactérias <strong>NUNCA MAIS!</strong></p>
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-sofa" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-sofa">
             <div class="carousel-inner">
@@ -505,7 +584,7 @@
     <section class="page-section" id="tapetes">
       <div class="container">
         <h3 class="text-center ">Tapetes e carpetes</h3>
-        <div class="mb-3 d-flex justify-content-center">
+        <div class="mb-5 d-flex justify-content-center">
           <div id="carousel-tapetes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-tapetes">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -535,39 +614,6 @@
       <div style="height:5px; border:0; background-color: #0094FF; border-radius: 100%;"></div>
     </div>
 
-    <!-- Section Sobre nós -->
-    <section class="page-section" id="sobre">
-      <div class="container">
-        <h3 class="text-center ">Souza Higienização de Estofados</h3>
-        <div class="card p-4">
-          <div class="row">
-            <div class="col-md-6 col-ms-12 m-auto">
-              <div class="card-block">
-                <p class="text-black">
-                  Somos uma empresa dedicada em trazer bem estar de ambientes e a nossa missão é contribuir com a
-                  Higienização e Limpeza dos Estofados, Tapetes e Carpetes!
-                </p>
-                <p class="text-black">
-                  Estamos consolidados no Mercado há 3 anos, utilizando produtos de qualidade e específicos para cada
-                  tipo de material. Atuamos com empresas parceiras e também com clientes a domicílio.
-                </p>
-                <p class="text-black">
-                  Com os melhores preços de mercado e com qualidade excelente, levamos o serviço da Souza Higienização,
-                  até você.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-5 col-ms-12">
-              <div class="card-block">
-                <img align=left class="img-thumbnail rounded" src="./assets/logo.png" alt="">
-                <img align=right class="img-thumbnail rounded" src="./assets/qualidade.jpeg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Botão orçamento -->
     <div class="d-flex justify-content-center py-5">
@@ -578,9 +624,20 @@
 
     <!-- Section beneficios -->
     <section>
-      <div class="">
+      <div class="container">
         <h3 class="text-center ">Beneficios de realizar limpeza e higienização:</h3>
         <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <ul>
+              <h2>Limpo</h2>
+              <li>Odor agradável</li>
+              <li>Ambiente limpo e saudável</li>
+              <li>Maciez</li>
+              <li>Higienização</li>
+              <li>Reduz risco de doenças alérgicas</li>
+            </ul>
+          </div>
+
           <div class="col-md-6 text-center">
             <ul>
               <h2>Sujo</h2>
@@ -594,26 +651,60 @@
               <li>Residuo de comida</li>
             </ul>
           </div>
-
-          <div class="col-md-6 text-center">
-            <ul>
-              <h2>Limpo</h2>
-              <li>Odor agradável</li>
-              <li>Ambiente limpo e saudável</li>
-              <li>Maciez</li>
-              <li>Higienização</li>
-              <li>Reduz risco de doenças alérgicas</li>
-            </ul>
-          </div>
           <img src="./assets/sofa-limpo-limpo.jpg" class="image-beneficios" alt="">
-
 
         </div>
       </div>
     </section>
 
-    <section class="text-center">
-      <h1>Depoimetos aqui</h1>
+    
+
+    <!-- depoimentos -->
+    <section class="wrapper" id="depoimentos">
+      <div class="container pb-5">
+        <h2>Veja o que os nossos clientes dizem</h2>        
+        <div class="row d-flex justify-content-center">
+          <div class="card-d col-lg-4 col-md-6 col-ms-12">
+            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
+              tempore inventore.</p>
+            <img src="./assets/logo.png" alt="">
+            <p class="name-d">Isaias Tortorele</p>
+          </div>
+
+          <div class="card-d col-lg-4 col-md-6 col-ms-12">
+            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
+              tempore inventore.</p>
+            <img src="./assets/logo.png" alt="">
+            <p class="name-d">Isaias Tortorele</p>
+          </div>
+          <div class="card-d col-lg-4 col-md-6 col-ms-12">
+            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
+              tempore inventore.</p>
+            <img src="./assets/logo.png" alt="">
+            <p class="name-d">Isaias Tortorele</p>
+          </div>
+          <div class="card-d col-lg-4 col-md-6 col-ms-12">
+            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
+              tempore inventore.</p>
+            <img src="./assets/logo.png" alt="">
+            <p class="name-d">Isaias Tortorele</p>
+          </div>
+          <div class="card-d col-lg-4 col-md-6 col-ms-12">
+            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
+              tempore inventore.</p>
+            <img src="./assets/logo.png" alt="">
+            <p class="name-d">Isaias Tortorele</p>
+          </div>
+          <div class="card-d col-lg-4 col-md-6 col-ms-12">
+            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
+              tempore inventore.</p>
+            <img src="./assets/logo.png" alt="">
+            <p class="name-d">Isaias Tortorele</p>
+          </div>
+      </div>
+    </div>
+
+
     </section>
 
   </main>
