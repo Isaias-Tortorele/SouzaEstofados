@@ -48,8 +48,9 @@
     }
 
     /* mouse over */
-    a:hover {
-      color: rgb(228, 222, 222);
+    .navbar-nav a:hover{
+      color: #e4dede;
+      border-bottom: 2px solid #e4dede;
     }
 
     /* link selecionado */
@@ -114,7 +115,14 @@
       z-index: -999;
       position: absolute;
       filter: brightness(50%);
-      object-fit: cover;
+      background-image: url('./assets/Banner-1.jpg');
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .carousel-caption {
+      bottom: -0.75rem;
+      text-decoration: overline;
     }
 
     .div-btn {
@@ -217,7 +225,7 @@
       height: auto;
     }
 
-    .wrapper h2{
+    .wrapper h2 {
       color: #FFF;
       text-align: center;
       font-size: 36px;
@@ -266,6 +274,12 @@
       color: #FFF;
     }
 
+    .bi-arrow-left-circle-fill,
+    .bi-arrow-right-circle-fill {
+      color: #000;
+      font-size: 2rem;
+    }
+
 
     @media (max-width: 800px) {
       .list-contat {
@@ -306,6 +320,10 @@
       .image-beneficios {
         width: 100%;
         height: auto;
+      }
+
+      .carousel-caption {
+        bottom: -0.75rem;
       }
     }
 
@@ -361,12 +379,20 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#inicio">INICIO</a></li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#sobre">Sobre nós</a></li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#estofados">ESTOFADOS</a></li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 px-lg-3" href="#tapetes">TAPETES E
-                CARPETES</a></li>
-            <li class="mx-0 d-flex justify-content-center"><a class="py-1 pl-lg-3" href="#depoimentos">DEPOIMENTOS</a>
+            <li class="d-flex justify-content-center">
+              <a class="py-1 px-lg-3 linha" href="">Inicio</a>
+            </li>
+            <li class="d-flex justify-content-center">
+              <a class="py-1 px-lg-3 linha" href="#sobre">Sobre nós</a>
+            </li>
+            <li class="d-flex justify-content-center">
+              <a class="py-1 px-lg-3 linha" href="#estofados">Estofados</a>
+            </li>
+            <li class="d-flex justify-content-center">
+              <a class="py-1 px-lg-3 linha" href="#tapetes">Carpetes e tapetes</a>
+              </li>
+            <li class="d-flex justify-content-center">
+              <a class="py-1 pl-lg-3 linha" href="#depoimentos">Depoimentos</a>
             </li>
           </ul>
         </div>
@@ -381,7 +407,7 @@
       </div>
     </div>
     <!-- Imagem fundo -->
-    <img class="image" src="./assets/Banner-1.jpg" alt="Imagem da empresa" />
+    <img class="image" alt="Imagem da empresa"/>
   </header>
 
   <!-- <main style="background-color: #a4c9e441"> -->
@@ -390,7 +416,8 @@
     <section class="page-section">
       <div class="container">
         <h3 class="text-center">Limpeza de estofados</h3>
-        <p class="text-center">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões</p>
+        <p class="text-center">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões -
+          Carpetes</p>
         <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -406,7 +433,7 @@
               <img src="./assets/sofa3.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="./assets/Imagem1.jpeg" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/poltronas1.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
               <img src="./assets/Imagem2.jpeg" class="d-block w-100 img-slide" alt="...">
@@ -421,10 +448,10 @@
               <img src="./assets/Imagem5.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="./assets/Imagem6.jpeg" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/poltronas2.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="./assets/Imagem7.jpeg" class="d-block w-100 img-slide" alt="...">
+              <img src="./assets/poltronas3.jpeg" class="d-block w-100 img-slide" alt="...">
             </div>
             <div class="carousel-item">
               <img src="./assets/Imagem8.jpeg" class="d-block w-100 img-slide" alt="...">
@@ -441,10 +468,10 @@
           </div>
 
           <button class="carousel-control-prev " type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
           </button>
         </div>
       </div>
@@ -489,13 +516,14 @@
       <div class="container">
         <h3 class="text-center ">Estofados</h3>
         <p class="text-center">Ácaros e bactérias <strong>NUNCA MAIS!</strong></p>
+        <!-- Sofá -->
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-sofa" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-sofa">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./assets/sofa1.jpeg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
-                  <h5>Sofá</h5>
+                  <h6>Sofá</h6>
                 </div>
               </div>
               <div class="carousel-item">
@@ -518,50 +546,50 @@
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sofa" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carousel-sofa" data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-sofa" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
             </button>
           </div>
         </div>
-
+        <!-- Poltronas -->
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-poltronas" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-poltronas">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/Imagem1.jpeg" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/poltronas1.jpeg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
-                  <h5>Poltronas</h5>
+                  <h6>Poltronas</h6>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/Imagem7.jpeg" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/poltronas2.jpeg" class="d-block w-100 img-slide" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./assets/Imagem6.jpeg" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/poltronas3.jpeg" class="d-block w-100 img-slide" alt="...">
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-poltronas"
+            <button class="carousel-control-prev " type="button" data-bs-target="#carousel-poltronas"
               data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+              <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-poltronas"
               data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
             </button>
           </div>
         </div>
-
+        <!-- Colçoes -->
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-colcoes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-colcoes">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./assets/colcoes1.jpeg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
-                  <h5>Colçoes</h5>
+                  <h6>Colçoes</h6>
                 </div>
               </div>
               <div class="carousel-item">
@@ -569,11 +597,86 @@
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-colcoes" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carousel-colcoes"
+              data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel-colcoes" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <!-- Bancos -->
+        <div class="mb-3 d-flex justify-content-center">
+          <div id="carousel-banco" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-banco">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/banco1.jpeg" class="d-block w-100 img-slide" alt="...">
+                <div class="carousel-caption">
+                  <h6>Bancos</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/banco2.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/banco3.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/banco4.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/banco5.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/banco6.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev " type="button" data-bs-target="#carousel-banco" data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-banco" data-bs-slide="next">
+              <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <!-- Cadeiras -->
+        <div class="mb-3 d-flex justify-content-center">
+          <div id="carousel-cadeira" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-cadeira">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/cadeira.jpeg" class="d-block w-100 img-slide" alt="...">
+                <div class="carousel-caption">
+                  <h5>Cadeiras</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/cadeira1.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/cadeira2.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/cadeira3.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/cadeira4.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/cadeira5.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/cadeira6.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev " type="button" data-bs-target="#carousel-cadeira"
+              data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-cadeira" data-bs-slide="next">
+              <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
             </button>
           </div>
         </div>
@@ -585,24 +688,28 @@
       <div class="container">
         <h3 class="text-center ">Tapetes e carpetes</h3>
         <div class="mb-5 d-flex justify-content-center">
-          <div id="carousel-tapetes" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-tapetes">
+          <div id="carousel-carpete" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-carpete">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/carpete.jpeg" class="d-block w-100 img-slide" alt="...">
                 <div class="carousel-caption">
                   <h5>Carpetes</h5>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://bit.ly/3a5iN7t" class="d-block w-100 img-slide" alt="...">
+                <img src="./assets/carpete1.jpeg" class="d-block w-100 img-slide" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/carpete2.jpeg" class="d-block w-100 img-slide" alt="...">
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-tapetes" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carousel-carpete"
+              data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-tapetes" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-carpete" data-bs-slide="next">
+              <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
             </button>
           </div>
         </div>
@@ -657,12 +764,12 @@
       </div>
     </section>
 
-    
+
 
     <!-- depoimentos -->
     <section class="wrapper" id="depoimentos">
       <div class="container pb-5">
-        <h2>Veja o que os nossos clientes dizem</h2>        
+        <h2>Veja o que os nossos clientes dizem</h2>
         <div class="row d-flex justify-content-center">
           <div class="card-d col-lg-4 col-md-6 col-ms-12">
             <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
@@ -701,8 +808,8 @@
             <img src="./assets/logo.png" alt="">
             <p class="name-d">Isaias Tortorele</p>
           </div>
+        </div>
       </div>
-    </div>
 
 
     </section>
@@ -796,7 +903,7 @@
 
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgb(42, 96, 117);">
+    <div class="text-center p-1" style="background-color: rgb(42, 96, 117);">
       <!-- © 2021 Copyright: -->
       <a class="text-white" href="#">Desenvolvido: Por dois colegas</a>
     </div>
