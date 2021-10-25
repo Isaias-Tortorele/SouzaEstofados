@@ -63,6 +63,15 @@
       margin: 0;
     }
 
+    .icon-whats{
+      width: 50px; 
+      height: 50px; 
+      position: fixed; 
+      top: 89%; 
+      right: 40px;
+      z-index: 1000;
+    }
+
     .row {
       --bs-gutter-x: 0rem
     }
@@ -325,6 +334,15 @@
       .carousel-caption {
         bottom: -0.75rem;
       }
+
+      .icon-whats{
+      width: 40px; 
+      height: 40px; 
+      position: fixed; 
+      top: 90%; 
+      left: 20px;
+      z-index: 1000;
+    }
     }
 
     @media (max-width: 900px) {}
@@ -332,6 +350,11 @@
 </head>
 
 <body>
+  <div>
+    <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
+      <img class="icon-whats" src="./assets/whats.png" alt="Icone WhatsApp">
+    </a>
+  </div>
 
   <!-- Barra fixa com informações-->
   <div class="topbar fixed-top">
