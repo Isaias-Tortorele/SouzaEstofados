@@ -63,10 +63,10 @@
       margin: 0;
     }
 
-    .img-thumbnail{
-        background-color: transparent;
-        border: transparent;
-        max-width: 70%;
+    .img-thumbnail {
+      background-color: transparent;
+      border: transparent;
+      max-width: 70%;
     }
 
     .icon-whats {
@@ -215,7 +215,7 @@
     }
 
     .wrapper {
-      background: linear-gradient(90deg, rgba(0,71,191,1) 0%, rgba(0,212,255,1) 100%);
+      background: linear-gradient(90deg, rgba(0, 71, 191, 1) 0%, rgba(0, 212, 255, 1) 100%);
 
     }
 
@@ -226,7 +226,7 @@
       padding-top: 50px;
     }
 
-    .wrapper h3{
+    .wrapper h3 {
       color: #FFF;
     }
 
@@ -252,7 +252,7 @@
       height: auto;
     }
 
-    
+
 
     .card-d {
       text-align: center;
@@ -264,7 +264,7 @@
       border-radius: 10px;
       padding: 20px 15%;
       position: relative;
-      margin: 35px 50px;
+      margin: 35px 15px;
       font-style: italic;
     }
 
@@ -302,9 +302,13 @@
       font-size: 2rem;
     }
 
-    .bg-color{
+    .bg-color {
       background-color: #FFF;
       border-radius: 15px;
+    }
+
+    .linha-separador {
+      border-right: 3px solid #0094FF;
     }
 
 
@@ -361,6 +365,13 @@
         left: 20px;
         z-index: 1000;
       }
+
+      .linha-separador {
+        border-bottom: 3px solid #0094FF;
+        border-right: 0px;
+        margin: 0 10%;
+
+      }
     }
 
     @media (max-width: 900px) {}
@@ -416,7 +427,8 @@
     <nav class="navbar navbar-expand-lg bg-nav">
       <div class="container">
         <a class="navbar-brand text-center" href="index.html">
-          <img src="./assets/logo.png" style="width: 30px; height: 30px; margin-right: 10px; border-radius: 20%;" alt="logo">Souza Estofados</a>
+          <img src="./assets/logo.png" style="width: 30px; height: 30px; margin-right: 10px; border-radius: 20%;"
+            alt="logo">Souza Estofados</a>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -547,7 +559,7 @@
 
             <div class="col-md-5 col-ms-12">
               <div class="card-block ">
-                <img align=left  class="img-thumbnail p-3" src="./assets/logo.png" alt="">
+                <img align=left class="img-thumbnail p-3" src="./assets/logo.png" alt="">
                 <img align=right class="img-thumbnail p-3" src="./assets/qualidade.jpeg" alt="">
               </div>
             </div>
@@ -765,42 +777,39 @@
     <div class="container">
       <div style="height:5px; border:0; background-color: #0094FF; border-radius: 100%;"></div>
     </div>
-
-
     <!-- Botão orçamento -->
     <div class="d-flex justify-content-center py-5">
       <div class="d-flex flex-column div-btn-flex">
         <a href="#"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
       </div>
     </div>
-
     <!-- Section beneficios -->
     <section>
       <div class="container">
-        <h3 class="text-center ">Beneficios de realizar limpeza e higienização:</h3>
+        <h3 class="text-center">Entenda a importância da Higienização de estofados</h3>
         <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <ul>
-              <h2>Limpo</h2>
-              <li>Odor agradável</li>
-              <li>Ambiente limpo e saudável</li>
-              <li>Maciez</li>
-              <li>Higienização</li>
-              <li>Reduz risco de doenças alérgicas</li>
+          <div class="col-md-6 text-center my-2" style="font-size: 1rem;">
+            <ul class="linha-separador">
+              <h2>Sujo</h2>
+              <li>Pelo</li>
+              <li>Poeira</li>
+              <li>Acaros</li>
+              <li>Fungos</li>
+              <li>Manchas</li>
+              <li>Bactérias</li>
+              <li>Mal cheiro</li>
+              <li>Residuo de comida</li>
             </ul>
           </div>
 
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center my-2" style="font-size: 1rem;">
             <ul>
-              <h2>Sujo</h2>
-              <li>Pelo</li>
-              <li>Acaros</li>
-              <li>Bactérias</li>
-              <li>Fungos</li>
-              <li>Poeira</li>
-              <li>Manchas</li>
-              <li>Mal cheiro</li>
-              <li>Residuo de comida</li>
+              <h2>Limpo</h2>
+              <li>Maciez</li>
+              <li>Higienização</li>
+              <li>Odor agradável</li>
+              <li>Ambiente limpo e saudável</li>
+              <li>Reduz risco de doenças alérgicas</li>
             </ul>
           </div>
           <img src="./assets/sofa-limpo-limpo.jpg" class="image-beneficios" alt="">
@@ -809,54 +818,61 @@
       </div>
     </section>
 
-
-
     <!-- depoimentos -->
     <section class="wrapper" id="depoimentos">
       <div class="container pb-5">
         <h2>Veja o que os nossos clientes dizem</h2>
-        <div class="row d-flex justify-content-center">
-          <div class="card-d col-lg-4 col-md-6 col-ms-12">
-            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
-              tempore inventore.</p>
-            <img src="./assets/logo.png" alt="">
-            <p class="name-d">Isaias Tortorele</p>
+        <div id="carousel-depoimentos" class="carousel w-100" data-bs-ride="carousel-depoimentos">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="card-d col-lg-4 col-md-12 col-ms-12">
+                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore inventore.</p>
+                  <img src="./assets/logo.png" alt="">
+                  <p class="name-d">Isaias Tortorele</p>
+                </div>
+                <div class="card-d col-lg-4 col-md-12 col-ms-12">
+                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Temporibus, obcaecati expedita cumque rerum quibusdam distinctio,
+                    explicabo error a voluptatem unde nostrum similique, voluptate voluptates placeat eius ab minus
+                    dolore culpa.</p>
+                  <img src="./assets/logo.png" alt="">
+                  <p class="name-d">Isaias Tortorele</p>
+                </div>
+                <div class="card-d col-lg-4 col-md-12 col-ms-12">
+                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore inventore.</p>
+                  <img src="./assets/logo.png" alt="">
+                  <p class="name-d">Isaias Tortorele</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="card-d col-lg-4 col-md-12 col-ms-12">
+                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore.</p>
+                  <img src="./assets/logo.png" alt="">
+                  <p class="name-d">Isaias Tortorele</p>
+                </div>
+                <div class="card-d col-lg-4 col-md-12 col-ms-12">
+                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore.</p>
+                  <img src="./assets/logo.png" alt="">
+                  <p class="name-d">Isaias Tortorele</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="card-d col-lg-4 col-md-6 col-ms-12">
-            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
-              tempore inventore.</p>
-            <img src="./assets/logo.png" alt="">
-            <p class="name-d">Isaias Tortorele</p>
-          </div>
-          <div class="card-d col-lg-4 col-md-6 col-ms-12">
-            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
-              tempore inventore.</p>
-            <img src="./assets/logo.png" alt="">
-            <p class="name-d">Isaias Tortorele</p>
-          </div>
-          <div class="card-d col-lg-4 col-md-6 col-ms-12">
-            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
-              tempore inventore.</p>
-            <img src="./assets/logo.png" alt="">
-            <p class="name-d">Isaias Tortorele</p>
-          </div>
-          <div class="card-d col-lg-4 col-md-6 col-ms-12">
-            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
-              tempore inventore.</p>
-            <img src="./assets/logo.png" alt="">
-            <p class="name-d">Isaias Tortorele</p>
-          </div>
-          <div class="card-d col-lg-4 col-md-6 col-ms-12">
-            <p class="mensagem-d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque excepturi at
-              tempore inventore.</p>
-            <img src="./assets/logo.png" alt="">
-            <p class="name-d">Isaias Tortorele</p>
-          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carousel-depoimentos"
+            data-bs-slide="prev">
+            <i class="bi bi-arrow-left-circle-fill" aria-hidden="true"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-depoimentos"
+            data-bs-slide="next">
+            <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
-
-
     </section>
 
   </main>
