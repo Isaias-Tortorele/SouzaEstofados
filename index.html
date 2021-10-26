@@ -90,8 +90,7 @@
       justify-content: center;
       align-items: center;
       margin-top: 35px;
-      height: 455px;
-      box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75);
+      height: 490px;
     }
 
     .bg-nav {
@@ -141,7 +140,10 @@
     }
 
     .div-btn {
-      margin-top: 180px;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      left: 50%;
     }
 
     .div-btn-flex {
@@ -331,7 +333,7 @@
       }
 
       .div-btn {
-        margin-top: 45px;
+        top: 35%;
       }
 
       .header {
@@ -381,9 +383,9 @@
       position: relative;
       margin: 35px 0px;
       font-style: italic;
-    }
+      }
 
-    .mensagem-d:after {
+      .mensagem-d:after {
       content: "";
       width: 0;
       height: 0;
@@ -396,7 +398,7 @@
       right: 0;
       margin-left: auto;
       margin-right: auto;
-    }
+      }
     }
 
     @media (max-width: 900px) {}
@@ -404,6 +406,7 @@
 </head>
 
 <body>
+
   <div>
     <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
       <img class="icon-whats" src="./assets/whats.png" alt="Icone WhatsApp">
@@ -446,6 +449,7 @@
       </div>
     </div>
   </div>
+  
   <!-- Header com menu e imagem -->
   <header class="header">
     <!-- Menu responsivo -->
@@ -453,10 +457,17 @@
       <div class="container">
         <a class="navbar-brand text-center" href="index.html">
           <img src="./assets/logo.png" style="width: 30px; height: 30px; margin-right: 10px; border-radius: 20%;"
-            alt="logo">Souza Estofados</a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-          aria-label="Toggle navigation">
+            alt="logo">Souza Estofados
+        </a>
+        <button 
+          class="navbar-toggler text-white" 
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" 
+          aria-controls="navbarResponsive" 
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
@@ -480,19 +491,19 @@
         </div>
       </div>
     </nav>
-    <!-- Botões CTA -->
-    <div class="d-flex justify-content-center div-btn">
-      <div class="d-flex flex-column div-btn-flex">
-        <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
-          <button class="btn-whats mb-2">Peça seu orçamento</button></a>
-        <a href="##"><button class="btn-agendar">Entre em contato já</button></a>
-      </div>
-    </div>
     <!-- Imagem fundo -->
     <img class="image" alt="Imagem da empresa" />
   </header>
 
-  <!-- <main style="background-color: #a4c9e441"> -->
+  <!-- Botões CTA -->
+  <div class="d-flex justify-content-center div-btn">
+    <div class="d-flex flex-column div-btn-flex">
+      <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
+      <button class="btn-whats mb-2">Peça seu orçamento</button></a>
+      <a href="##"><button class="btn-agendar">Entre em contato já</button></a>
+    </div>
+  </div>
+
   <main>
     <!-- Section inicio -->
     <section class="page-section">
@@ -999,7 +1010,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
+  </script>
 
 </body>
 
