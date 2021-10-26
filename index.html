@@ -372,6 +372,31 @@
         margin: 0 10%;
 
       }
+
+      .mensagem-d {
+      background-color: #FFF;
+      color: #666;
+      border-radius: 10px;
+      padding: 20px 15%;
+      position: relative;
+      margin: 35px 0px;
+      font-style: italic;
+    }
+
+    .mensagem-d:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #FFF;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
     }
 
     @media (max-width: 900px) {}
@@ -783,6 +808,7 @@
         <a href="#"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
       </div>
     </div>
+
     <!-- Section beneficios -->
     <section>
       <div class="container">
