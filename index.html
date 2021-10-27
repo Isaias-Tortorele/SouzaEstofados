@@ -149,7 +149,7 @@
     .div-btn {
       z-index: 99;
       position: absolute;
-      top: 50%;
+      top: 45%;
       right: 50%;
       left: 50%;
     }
@@ -345,7 +345,8 @@
       align-items: center;
       height: 50px;
       padding-left: 15px;
-      background-color: #B7D9E4;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.212);
       margin-top: 15px;
       margin-bottom: 15px;
     }
@@ -357,6 +358,7 @@
       height: 40px;
       border: 0px;
       color: #5c5c5c;
+      
     }
     
     .input-form:focus {
@@ -364,8 +366,18 @@
       outline: 0;
       font-size: 16px;
       font-weight: 500;
-
     }
+
+    .input-form::-webkit-input-placeholder{
+      font-size: 16px;
+      color: rgba(102, 102, 102, 0.342);
+    }
+
+    .input-form:focus::-webkit-input-placeholder{
+      visibility: hidden;
+    }
+
+    
 
     .div-ckeckbox {
       flex-direction: row;
@@ -1048,7 +1060,7 @@
 
           <div class="div-textarea">
             <textarea class="form-control style-textarea" name="mensagem" id="mensagem" cols="85" rows="10"
-              placeholder="mensagem: "></textarea>
+              placeholder="mensagem:" ></textarea>
           </div>
 
           <div class="btn-contato">
