@@ -12,6 +12,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+  <!-- máscaras para números -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <title>Souza Estofados</title>
@@ -253,10 +259,8 @@
 
     .image-beneficios {
       width: 50%;
-      height: auto;
+      height: 100%;
     }
-
-
 
     .card-d {
       text-align: center;
@@ -315,6 +319,89 @@
       border-right: 3px solid #0094FF;
     }
 
+    .img-footer {
+      height: 90px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-contato {
+      padding: 0% 20%;
+      color: #0094FF;
+      font-size: 16px;
+    }
+
+    .textos {
+      margin: 0;
+      color: #0094FF;
+      font-size: 16px;
+    }
+
+    .div-form {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      padding-left: 15px;
+      background-color: #B7D9E4;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .input-form {
+      background-color: transparent;
+      margin-left: 10px;
+      width: 100%;
+      height: 40px;
+      border: 0px;
+      color: #5c5c5c;
+    }
+    
+    .input-form:focus {
+      box-shadow: 0 0 0 0;
+      outline: 0;
+      font-size: 16px;
+      font-weight: 500;
+
+    }
+
+    .div-ckeckbox {
+      flex-direction: row;
+      display: flex;
+    }
+
+    .div-ckeck {
+      margin-right: 15px;
+    }
+
+    .btn-primary {
+      width: 200px;
+    }
+
+    .btn-contato {
+      display: flex;
+      justify-content: center;
+    }
+
+    .div-textarea {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .style-textarea {
+      background-color: #B7D9E4;
+      font-weight: 500;
+      padding: 10px;
+    }
+
+    .style-textarea:focus {
+      background-color: #B7D9E4;
+      box-shadow: 0 0 0 0;
+      outline: 0;
+    }
 
     @media (max-width: 800px) {
       .list-contat {
@@ -354,7 +441,7 @@
 
       .image-beneficios {
         width: 100%;
-        height: auto;
+        height: 100%;
       }
 
       .carousel-caption {
@@ -378,37 +465,48 @@
       }
 
       .mensagem-d {
-      background-color: #FFF;
-      color: #666;
-      border-radius: 10px;
-      padding: 20px 15%;
-      position: relative;
-      margin: 35px 0px;
-      font-style: italic;
+        background-color: #FFF;
+        color: #666;
+        border-radius: 10px;
+        padding: 20px 15%;
+        position: relative;
+        margin: 35px 0px;
+        font-style: italic;
       }
 
       .mensagem-d:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid #FFF;
-      position: absolute;
-      bottom: -20px;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #FFF;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .img-footer {
+        display: none;
+      }
+
+      .form-contato {
+        padding: 0%;
+      }
+
+      .textos{
+        text-align: center;
       }
     }
 
-    @media (max-width: 900px) {}
   </style>
 </head>
 
 <body>
-
+  <!-- WhatsApp -->
   <div>
     <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
       <img class="icon-whats" src="./assets/whats.png" alt="Icone WhatsApp">
@@ -451,7 +549,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Header com menu e imagem -->
   <header class="header">
     <!-- Menu responsivo -->
@@ -461,15 +559,9 @@
           <img src="./assets/logo.png" style="width: 30px; height: 30px; margin-right: 10px; border-radius: 20%;"
             alt="logo">Souza Estofados
         </a>
-        <button 
-          class="navbar-toggler text-white" 
-          type="button" 
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive" 
-          aria-controls="navbarResponsive" 
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
@@ -501,8 +593,8 @@
   <div class="d-flex justify-content-center div-btn">
     <div class="d-flex flex-column div-btn-flex">
       <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
-      <button class="btn-whats mb-2">Peça seu orçamento</button></a>
-      <a href="##"><button class="btn-agendar">Entre em contato já</button></a>
+        <button class="btn-whats mb-2">Peça seu orçamento</button></a>
+      <a href="#contato"><button class="btn-agendar">Entre em contato já</button></a>
     </div>
   </div>
 
@@ -866,7 +958,8 @@
             <div class="carousel-item active">
               <div class="row">
                 <div class="card-d col-lg-4 col-md-12 col-ms-12">
-                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore inventore.</p>
+                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore
+                    inventore.</p>
                   <img src="./assets/logo.png" alt="">
                   <p class="name-d">Isaias Tortorele</p>
                 </div>
@@ -879,7 +972,8 @@
                   <p class="name-d">Isaias Tortorele</p>
                 </div>
                 <div class="card-d col-lg-4 col-md-12 col-ms-12">
-                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore inventore.</p>
+                  <p class="mensagem-d">Maxime itaque excepturi at tempore inventore. Maxime itaque excepturi at tempore
+                    inventore. Maxime itaque excepturi at tempore inventore.</p>
                   <img src="./assets/logo.png" alt="">
                   <p class="name-d">Isaias Tortorele</p>
                 </div>
@@ -911,6 +1005,56 @@
             <span class="bi bi-arrow-right-circle-fill" aria-hidden="true"></span>
           </button>
         </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="contato">
+      <div class="container">
+        <h2 class="title">Contato</h2>
+        <form class="form-contato" autocomplete="off" action="">
+          <p class="textos">Preencha o nosso formulário e entraremos em contato com você ou mande mensagem via WhatsApp
+            <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
+              <img src="./assets/whats.png" style="width: 20px; height: 20px;">
+            </a>
+          </p>
+          <div class="div-form">
+            <label for="name">Nome: </label>
+            <input class="input-form" type="text" name="name" id="name" placeholder="seu nome">
+          </div>
+          <div class="div-form">
+            <label for="email">Email: </label>
+            <input class="input-form" type="email" name="email" id="email" placeholder="ex: contato@gmail.com">
+          </div>
+          <div class="div-form">
+            <label for="tel">Telefone: </label>
+            <input class="input-form" type="tel" name="telefone" id="tel" placeholder="(11) 99999-9999" onkeypress="$(this).mask('(00) 90000-0000')">
+          </div>
+
+          <p class="m-0">Assunto: </p>
+          <div class="div-ckeckbox">
+            <div class="div-ckeck">
+              <input type="checkbox" name="orcamento" id="orcamento">
+              <label class="label-ckeck" for="orcamento">Orçamento</label>
+            </div>
+            <div class="div-ckeck">
+              <input type="checkbox" name="duvida" id="duvida">
+              <label class="label-ckeck" for="duvida">Tirar Dúvida</label>
+            </div>
+            <div class="div-ckeck">
+              <input type="checkbox" name="outros" id="outros">
+              <label class="label-ckeck" for="outros">Outros</label>
+            </div>
+          </div>
+
+          <div class="div-textarea">
+            <textarea class="form-control style-textarea" name="mensagem" id="mensagem" cols="85" rows="10"
+              placeholder="mensagem: "></textarea>
+          </div>
+
+          <div class="btn-contato">
+            <button class="btn btn-primary" type="submit" name="">Enviar</button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -971,8 +1115,8 @@
 
       <!-- Logo e Pagamentos -->
       <div class="d-flex justify-content-between row">
-        <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center; align-items: center;">
-          <img style="height: 90px;" class="img-fluid rounded" src="./assets/logo.png" alt="">
+        <div class="col-md-4 col-sm-12 text-center img-footer">
+          <img class="img-fluid rounded img-footer" src="./assets/logo.png" alt="">
         </div>
 
         <div class="col-md-4 col-sm-12 text-center">
@@ -1001,7 +1145,6 @@
 
     </div>
 
-
     <!-- Copyright -->
     <div class="text-center p-1" style="background-color: rgb(42, 96, 117);">
       <!-- © 2021 Copyright: -->
@@ -1012,7 +1155,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-  </script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
 </body>
 
