@@ -11,6 +11,10 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 
   <!-- máscaras para números -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -32,11 +36,9 @@
 
     body {
       margin: 0;
-      color: rgb(42, 96, 117);
-      font-size: 14px;
+      font-size: 16px;
       line-height: 22px;
-      font-weight: 500;
-      /* height: 800px; */
+      font-family: 'Roboto', sans-serif;
     }
 
     p {
@@ -44,7 +46,7 @@
     }
 
     a {
-      color: #FFF;
+      color: #000;
       text-decoration: none
     }
 
@@ -70,18 +72,19 @@
     }
 
     .img-thumbnail {
-      background-color: transparent;
-      border: transparent;
       max-width: 70%;
+      border: transparent;
+      background-color: transparent;
     }
 
     .icon-whats {
-      width: 50px;
-      height: 50px;
-      position: fixed;
       top: 89%;
       right: 40px;
+      width: 50px;
+      height: 50px;
       z-index: 1000;
+      position: fixed;
+      box-shadow: 10px 5px 5px black;
     }
 
     .row {
@@ -89,7 +92,59 @@
     }
 
     .lista {
+      font-size: 0.9rem;
+      font-weight: 500;
       margin-left: 15px;
+    }
+
+    .linha {
+      border: 0;
+      height: 5px;
+      border-radius: 100%;
+      background-color: #0094FF;
+    }
+
+  
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .img-logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 20%;
+    }
+
+    .bg-nav {
+      z-index: 100;
+      background-color: #2a6075;
+    }
+
+    .topbar {
+      width: 100%;
+      height: 35px;
+      display: flex;
+      padding: 4px 0;
+      align-items: center;
+      background-color: #0094FF;
+    }
+
+    .area-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .list-contat,
+    .list-icon {
+      margin: auto;
+      display: flex;
+      list-style: none;
+      text-align: center;
+      align-items: center;
     }
 
     .header {
@@ -99,34 +154,8 @@
       height: 490px;
     }
 
-    .bg-nav {
-      z-index: 100;
-      background-color: rgb(42, 96, 117);
-    }
-
-    .topbar {
-      width: 100%;
-      height: 35px;
-      padding: 4px 0;
-      background-color: #0094FF;
-      /* box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75); */
-      ;
-    }
-
-    .area-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-    }
-
-    .list-contat,
-    .list-icon {
-      display: flex;
-      list-style: none;
-      align-items: center;
-      text-align: center;
-      margin: auto;
+    .bi {
+      font-size: 20px;
     }
 
     .image {
@@ -135,10 +164,10 @@
       height: 490px;
       z-index: -999;
       position: absolute;
-      filter: brightness(50%);
-      background-image: url('./assets/Banner-1.jpg');
-      background-position: center center;
       background-size: cover;
+      filter: brightness(50%);
+      background-position: center center;
+      background-image: url('./assets/Banner-1.jpg');
     }
 
     .carousel-caption {
@@ -147,11 +176,11 @@
     }
 
     .div-btn {
+      top: 45%;
+      left: 50%;
+      right: 50%;
       z-index: 99;
       position: absolute;
-      top: 45%;
-      right: 50%;
-      left: 50%;
     }
 
     .div-btn-flex {
@@ -163,16 +192,16 @@
       color: #FFF;
       font-size: 16px;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 500;
       padding: 10px 15px;
       border-radius: 5px;
       text-align: center;
-      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: 0 4px 15px 0 #000000bf;
       background-image: linear-gradient(to right, #7eb7cf, #7cc6df, #70c2e6, #B7D9E4);
     }
 
     .btn-whats:hover {
-      color: rgb(228, 222, 222);
+      color: #e4dede;
     }
 
     .btn-whats:focus,
@@ -185,14 +214,13 @@
       color: #FFF;
       cursor: pointer;
       font-size: 16px;
-      font-weight: 600;
       border: solid 2px;
       padding: 10px 15px;
       text-align: center;
       border-radius: 5px;
       border-color: #FFF;
       background-color: Transparent;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
+      box-shadow: 0 10px 10px #00000033;
     }
 
     .btn-agendar:hover {
@@ -200,23 +228,14 @@
       color: #FFF;
       cursor: pointer;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 500;
       border: solid 2px;
       padding: 10px 15px;
       text-align: center;
       border-radius: 5px;
       border-color: transparent;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
+      box-shadow: 0 10px 10px #00000033;
       background-image: linear-gradient(to right, #7eb7cf, #7cc6df, #70c2e6, #B7D9E4);
-    }
-
-    .bi {
-      font-size: 20px;
-    }
-
-    .card {
-      border: none;
-      margin-bottom: 10px;
     }
 
     .page-section {
@@ -224,28 +243,18 @@
       padding-bottom: 1rem;
     }
 
-    .wrapper {
-      background: linear-gradient(90deg, rgba(0, 71, 191, 1) 0%, rgba(0, 212, 255, 1) 100%);
-
+    .text-h2{
+      display: flex;
+      color: #00528d;
+      justify-content: center;
+      
     }
 
-    .wrapper h2 {
-      color: #FFF;
+    .texto-info{
+      color: #000;
+      font-size: 1rem;
+      font-weight: 500;
       text-align: center;
-      font-size: 36px;
-      padding-top: 50px;
-    }
-
-    .wrapper h3 {
-      color: #FFF;
-    }
-
-    .img-svg {
-      top: 10px;
-    }
-
-    .centralize {
-      margin: auto;
     }
 
     .img-slide {
@@ -253,8 +262,28 @@
       object-fit: contain;
     }
 
+    .wrapper {
+      background: linear-gradient(90deg, #0047bf 0%, #00d4ff 100%);
+    }
+
+    .wrapper h2 {
+      color: #FFF;
+      font-size: 2.3rem;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    .wrapper h3 {
+      color: #FFF;
+    }
+
     .background {
       background-color: #0094FF;
+    }
+
+    .lista-footer {
+      text-align: left;
+      margin-left: 35%;
     }
 
     .image-beneficios {
@@ -267,13 +296,13 @@
     }
 
     .mensagem-d {
-      background-color: #FFF;
       color: #666;
-      border-radius: 10px;
+      margin: 35px 15px;
       padding: 20px 15%;
       position: relative;
-      margin: 35px 15px;
       font-style: italic;
+      border-radius: 10px;
+      background-color: #FFF;
     }
 
     .mensagem-d:after {
@@ -299,20 +328,20 @@
     }
 
     .name-d {
-      font-size: 1rem;
-      font-weight: bold;
       color: #FFF;
+      font-size: 1rem;
+      margin-top: 5px;
     }
 
     .bi-arrow-left-circle-fill,
     .bi-arrow-right-circle-fill {
-      color: #000;
       font-size: 2rem;
+      color: #000000;
     }
 
     .bg-color {
-      background-color: #FFF;
       border-radius: 15px;
+      background-color: #FFF;
     }
 
     .linha-separador {
@@ -323,6 +352,16 @@
       height: 90px;
     }
 
+    .img-pagamentos {
+      height: 90px;
+    }
+
+    .div-icons-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .title {
       text-align: center;
       margin-bottom: 30px;
@@ -330,37 +369,43 @@
 
     .form-contato {
       padding: 0% 20%;
-      color: #0094FF;
       font-size: 16px;
+    }
+
+    .textos-menu{
+      margin: 0;
+      font-size: 1rem;
     }
 
     .textos {
       margin: 0;
-      color: #0094FF;
-      font-size: 16px;
+      color: #424242;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
     }
 
     .div-form {
-      display: flex;
-      align-items: center;
       height: 50px;
+      display: flex;
+      margin-top: 15px;
       padding-left: 15px;
       border-radius: 5px;
-      border: 1px solid rgba(0, 0, 0, 0.212);
-      margin-top: 15px;
+      align-items: center;
       margin-bottom: 15px;
+      border: 1px solid #00000036;
     }
 
     .input-form {
-      background-color: transparent;
-      margin-left: 10px;
       width: 100%;
-      height: 40px;
       border: 0px;
+      height: 40px;
       color: #5c5c5c;
-      
+      margin-left: 10px;
+      background-color: transparent;
+
     }
-    
+
     .input-form:focus {
       box-shadow: 0 0 0 0;
       outline: 0;
@@ -368,16 +413,14 @@
       font-weight: 500;
     }
 
-    .input-form::-webkit-input-placeholder{
+    .input-form::-webkit-input-placeholder {
       font-size: 16px;
-      color: rgba(102, 102, 102, 0.342);
+      color: #66666657;
     }
 
-    .input-form:focus::-webkit-input-placeholder{
+    .input-form:focus::-webkit-input-placeholder {
       visibility: hidden;
     }
-
-    
 
     .div-ckeckbox {
       flex-direction: row;
@@ -399,20 +442,19 @@
 
     .div-textarea {
       display: flex;
-      align-items: center;
       margin: 20px 0;
+      align-items: center;
     }
 
     .style-textarea {
-      background-color: #B7D9E4;
-      font-weight: 500;
       padding: 10px;
+      background-color: #B7D9E4;
     }
 
     .style-textarea:focus {
-      background-color: #B7D9E4;
-      box-shadow: 0 0 0 0;
       outline: 0;
+      box-shadow: 0 0 0 0;
+      background-color: #B7D9E4;
     }
 
     @media (max-width: 800px) {
@@ -461,29 +503,29 @@
       }
 
       .icon-whats {
-        width: 40px;
-        height: 40px;
-        position: fixed;
         top: 90%;
         left: 20px;
+        width: 40px;
+        height: 40px;
         z-index: 1000;
+        position: fixed;
       }
 
       .linha-separador {
-        border-bottom: 3px solid #0094FF;
-        border-right: 0px;
         margin: 0 10%;
+        border-right: 0px;
+        border-bottom: 3px solid #0094FF;
 
       }
 
       .mensagem-d {
-        background-color: #FFF;
         color: #666;
-        border-radius: 10px;
+        margin: 35px 0px;
         padding: 20px 15%;
         position: relative;
-        margin: 35px 0px;
         font-style: italic;
+        border-radius: 10px;
+        background-color: #FFF;
       }
 
       .mensagem-d:after {
@@ -509,11 +551,14 @@
         padding: 0%;
       }
 
-      .textos{
+      .textos-menu {
         text-align: center;
       }
-    }
 
+      .div-icons-footer {
+        display: none
+      }
+    }
   </style>
 </head>
 
@@ -531,16 +576,13 @@
       <div class="area-container">
         <div class="icons">
           <ul class="list-icon">
-            <!-- <li>
-              <img src="./assets/logo.png" style="width: 20px; height: 20px; margin-right: 10px; border-radius: 20%;" alt="logo">
-            </li> -->
             <li><a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1"><i
                   class="bi bi-whatsapp"></i></a></li>
             <li class="lista"><a href="https://www.instagram.com/souzavitrines/"><i class="bi bi-instagram"></i></a>
             </li>
             <li class="lista"><a href="https://www.facebook.com/souzavitrines.sousa.1"><i
                   class="bi bi-facebook"></i></a></li>
-            <li class="lista"><a href="#"><i class="bi bi-envelope"> </i></a></li>
+            <li class="lista"><a href="#contato"><i class="bi bi-envelope"> </i></a></li>
           </ul>
         </div>
 
@@ -549,7 +591,7 @@
             <a href="#sobre">
               <li class="lista">Sobre nós</li>
             </a>
-            <a href="">
+            <a href="#contato">
               <li class="lista">Fale Conosco</li>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
@@ -567,31 +609,29 @@
     <!-- Menu responsivo -->
     <nav class="navbar navbar-expand-lg bg-nav">
       <div class="container">
-        <a class="navbar-brand text-center" href="index.html">
-          <img src="./assets/logo.png" style="width: 30px; height: 30px; margin-right: 10px; border-radius: 20%;"
-            alt="logo">Souza Estofados
-        </a>
+        <a class="navbar-brand" href="index.html"> <img class="img-logo" src="./assets/logo.png" alt="logo">Souza
+          Estofados</a>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse " id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto textos-menu">
             <li class="d-flex justify-content-center">
-              <a class="py-1 px-lg-3 linha" href="">Inicio</a>
+              <a class="py-1 px-lg-3" href="">Inicio</a>
             </li>
             <li class="d-flex justify-content-center">
-              <a class="py-1 px-lg-3 linha" href="#sobre">Sobre nós</a>
+              <a class="py-1 px-lg-3" href="#sobre">Sobre nós</a>
             </li>
             <li class="d-flex justify-content-center">
-              <a class="py-1 px-lg-3 linha" href="#estofados">Estofados</a>
+              <a class="py-1 px-lg-3" href="#estofados">Estofados</a>
             </li>
             <li class="d-flex justify-content-center">
-              <a class="py-1 px-lg-3 linha" href="#tapetes">Carpetes e tapetes</a>
+              <a class="py-1 px-lg-3" href="#tapetes">Carpetes e tapetes</a>
             </li>
             <li class="d-flex justify-content-center">
-              <a class="py-1 pl-lg-3 linha" href="#depoimentos">Depoimentos</a>
+              <a class="py-1 pl-lg-3" href="#depoimentos">Depoimentos</a>
             </li>
           </ul>
         </div>
@@ -614,9 +654,8 @@
     <!-- Section inicio -->
     <section class="page-section">
       <div class="container">
-        <h2 class="text-center">Limpeza de estofados</h2>
-        <p class="text-center">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões -
-          Carpetes</p>
+        <h2 class="text-h2">Limpeza de estofados</h2>
+        <p class="texto-info">Higienização e Limpeza: Sofas - Poltronas - Cadeiras - Bancos de Veiculos - Colchões - Carpetes</p>
         <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -679,20 +718,20 @@
     <!-- Section Sobre nós -->
     <section class="wrapper" id="sobre">
       <div class="container">
-        <h2 class="text-center ">Souza Higienização de Estofados</h2>
+        <h2 class="text-h2">Souza Higienização de Estofados</h2>
         <div class="py-3">
           <div class="row bg-color">
             <div class="col-md-6 col-ms-12 m-auto p-4">
               <div class="card-block">
-                <p style="font-size: 1.1rem;">
+                <p class="textos">
                   Somos uma empresa dedicada em trazer bem estar de ambientes e a nossa missão é contribuir com a
                   Higienização e Limpeza dos Estofados, Tapetes e Carpetes!
                 </p>
-                <p style="font-size: 1.1rem;">
+                <p class="textos">
                   Estamos consolidados no Mercado há 3 anos, utilizando produtos de qualidade e específicos para cada
                   tipo de material. Atuamos com empresas parceiras e também com clientes a domicílio.
                 </p>
-                <p style="font-size: 1.1rem;">
+                <p class="textos">
                   Com os melhores preços de mercado e com qualidade excelente, levamos o serviço da Souza Higienização,
                   até você.
                 </p>
@@ -713,8 +752,8 @@
     <!-- Section estofados -->
     <section class="page-section" id="estofados">
       <div class="container">
-        <h3 class="text-center ">Estofados</h3>
-        <p class="text-center">Ácaros e bactérias <strong>NUNCA MAIS!</strong></p>
+        <h2 class="text-h2">Estofados</h2>
+        <p class="texto-info">Ácaros e bactérias <strong>NUNCA MAIS!</strong></p>
         <!-- Sofá -->
         <div class="mb-3 d-flex justify-content-center">
           <div id="carousel-sofa" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-sofa">
@@ -885,7 +924,7 @@
     <!-- Section tapetes e carpetes -->
     <section class="page-section" id="tapetes">
       <div class="container">
-        <h3 class="text-center ">Tapetes e carpetes</h3>
+        <h2 class="text-h2">Tapetes e carpetes</h2>
         <div class="mb-5 d-flex justify-content-center">
           <div id="carousel-carpete" class="carousel slide w-75 slide-tamanho" data-bs-ride="carousel-carpete">
             <div class="carousel-inner">
@@ -917,21 +956,21 @@
 
     <!-- Barra de separação -->
     <div class="container">
-      <div style="height:5px; border:0; background-color: #0094FF; border-radius: 100%;"></div>
+      <div class="linha"></div>
     </div>
     <!-- Botão orçamento -->
     <div class="d-flex justify-content-center py-5">
       <div class="d-flex flex-column div-btn-flex">
-        <a href="#"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
+        <a href="#contato"><button class="btn-whats mb-1">Peça seu orçamento</button></a>
       </div>
     </div>
 
     <!-- Section beneficios -->
     <section>
       <div class="container">
-        <h3 class="text-center">Entenda a importância da Higienização de estofados</h3>
+        <h2 class="text-h2">Entenda a importância da Higienização de estofados</h2>
         <div class="row justify-content-center">
-          <div class="col-md-6 text-center my-2" style="font-size: 1rem;">
+          <div class="col-md-6 text-center my-2 textos">
             <ul class="linha-separador">
               <h2>Sujo</h2>
               <li>Pelo</li>
@@ -945,7 +984,7 @@
             </ul>
           </div>
 
-          <div class="col-md-6 text-center my-2" style="font-size: 1rem;">
+          <div class="col-md-6 text-center my-2 textos">
             <ul>
               <h2>Limpo</h2>
               <li>Maciez</li>
@@ -1022,9 +1061,9 @@
 
     <section class="page-section" id="contato">
       <div class="container">
-        <h2 class="title">Contato</h2>
+        <h2 class="text-h2 title">Contato</h2>
         <form class="form-contato" autocomplete="off" action="">
-          <p class="textos">Preencha o nosso formulário e entraremos em contato com você ou mande mensagem via WhatsApp
+          <p class="texto-info">Preencha o nosso formulário e entraremos em contato com você ou mande mensagem via WhatsApp
             <a href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1">
               <img src="./assets/whats.png" style="width: 20px; height: 20px;">
             </a>
@@ -1039,7 +1078,8 @@
           </div>
           <div class="div-form">
             <label for="tel">Telefone: </label>
-            <input class="input-form" type="tel" name="telefone" id="tel" placeholder="(11) 99999-9999" onkeypress="$(this).mask('(00) 90000-0000')">
+            <input class="input-form" type="tel" name="telefone" id="tel" placeholder="(11) 99999-9999"
+              onkeypress="$(this).mask('(00) 90000-0000')">
           </div>
 
           <p class="m-0">Assunto: </p>
@@ -1060,7 +1100,7 @@
 
           <div class="div-textarea">
             <textarea class="form-control style-textarea" name="mensagem" id="mensagem" cols="85" rows="10"
-              placeholder="mensagem:" ></textarea>
+              placeholder="mensagem:"></textarea>
           </div>
 
           <div class="btn-contato">
@@ -1106,7 +1146,6 @@
           <h4>Nossos telefone</h4>
           <ul>
             <li>(11) 94422-5000</li>
-            <li>(11) 94422-5000</li>
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 text-center mb-3">
@@ -1117,7 +1156,7 @@
         </div>
         <div class="col-md-4 text-center mb-3">
           <h4>Servicos</h4>
-          <ul style="text-align: left; margin-left: 35%;">
+          <ul class="lista-footer">
             <li style="list-style: inside;">Limpeza</li>
             <li style="list-style: inside;">Higienização</li>
             <li style="list-style: inside;">hidratação</li>
@@ -1133,13 +1172,12 @@
 
         <div class="col-md-4 col-sm-12 text-center">
           <h4>Pagamentos</h4>
-          <img style="height: 90px;"
+          <img class="img-pagamentos"
             src="https://alban.com.br/wp-content/uploads/2021/07/bandeira-dos-cartoes-de-credito.png"
             alt="Cartões aceitos na empresa: Visa, MarterCar, HiperCard, Elo">
         </div>
 
-        <div class="col-md-4 col-sm-12 text-center"
-          style="display: flex; justify-content: center; align-items: center;">
+        <div class="col-md-4 col-sm-12 text-center div-icons-footer">
           <a class="btn btn-outline-light btn-floating m-1"
             href="https://api.whatsapp.com/send?phone=5511944225000&text=Ol%C3%A1" role="button">
             <i class="bi bi-whatsapp"></i>
@@ -1148,8 +1186,7 @@
             role="button"><i class="bi bi-instagram"></i></a>
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/souzavitrines.sousa.1"
             role="button"><i class="bi bi-facebook"></i></a>
-          <a class="btn btn-outline-light btn-floating m-1" href="souzavitrineshigienizacao@gmail.com" role="button"><i
-              class="bi bi-envelope"></i>
+          <a class="btn btn-outline-light btn-floating m-1" href="#contato" role="button"><i class="bi bi-envelope"></i>
           </a>
         </div>
 
@@ -1158,7 +1195,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="text-center p-1" style="background-color: rgb(42, 96, 117);">
+    <div class="text-center p-1" style="background-color: #2a6075;">
       <!-- © 2021 Copyright: -->
       <a class="text-white" href="#">Desenvolvido: Por dois colegas</a>
     </div>
@@ -1168,7 +1205,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
 </body>
 
