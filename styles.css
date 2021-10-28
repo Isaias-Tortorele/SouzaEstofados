@@ -146,7 +146,7 @@ ul {
 }
 
 .carousel-caption {
-  bottom: -0.75rem;
+  bottom: -0.75rem!important;
   text-decoration: overline;
 }
 
@@ -239,10 +239,6 @@ ul {
 
 .wrapper {
   background: linear-gradient(90deg, #0047bf 0%, #00d4ff 100%);
-}
-
-.height-fixed {
-  min-height: 470px;
 }
 
 .wrapper h2 {
@@ -542,11 +538,5 @@ ul {
 
   .div-icons-footer {
     display: none
-  }
-}
-
-@media (max-width: 600px){
-  .height-fixed {
-    min-height: 85rem;
   }
 }
