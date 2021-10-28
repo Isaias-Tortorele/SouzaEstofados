@@ -241,6 +241,10 @@ ul {
   background: linear-gradient(90deg, #0047bf 0%, #00d4ff 100%);
 }
 
+.height-fixed {
+  min-height: 470px;
+}
+
 .wrapper h2 {
   color: #FFF;
   font-size: 2.3rem;
@@ -273,7 +277,7 @@ ul {
 .mensagem-d {
   color: #666;
   margin: 35px 15px;
-  padding: 20px 15%;
+  padding: 10px 5%;
   font-size: 0.9rem;
   position: relative;
   font-style: italic;
@@ -538,5 +542,11 @@ ul {
 
   .div-icons-footer {
     display: none
+  }
+}
+
+@media (max-width: 600px){
+  .height-fixed {
+    min-height: 85rem;
   }
 }
