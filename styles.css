@@ -539,4 +539,7 @@ ul {
   .div-icons-footer {
     display: none
   }
+  .w-75{
+    width: 0%;
+  }
 }
