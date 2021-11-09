@@ -437,6 +437,10 @@ ul {
   background-color: #B7D9E4;
 }
 
+.slide-tamanho {
+  width: 75%!important;
+}
+
 @media (max-width: 800px) {
   .list-contat {
     display: none;
@@ -466,7 +470,7 @@ ul {
   }
 
   .slide-tamanho {
-    width: 100% !important;
+    width: 100%!important;
   }
 
   .img-slide {
@@ -538,8 +542,5 @@ ul {
 
   .div-icons-footer {
     display: none
-  }
-  .w-75{
-    width: 0%;
   }
 }
